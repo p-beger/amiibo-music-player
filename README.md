@@ -72,21 +72,21 @@ sudo apt install python3-full
 
 ### 3. Install the application
 
-Install the project and its Python dependencies:
+For a regular installation:
 
 ```bash
 python -m pip install .
 ```
 
-This installs `amiibo-music-player` and its dependency on `amiibo-reader`.
+This installs `amiibo-music-player` and its Python dependencies, including `amiibo-reader`.
 
-For development, install the development dependencies as well:
+For development, install the project in editable mode together with its development dependencies:
 
 ```bash
-python -m pip install --group dev
+python -m pip install --group dev -e .
 ```
 
-This installs tools such as Ruff and mypy.
+This installs the project in editable mode and adds development tools such as Ruff and mypy.
 
 ### 4. Connect the MFRC522
 
