@@ -115,7 +115,7 @@ musics/
 │   │   └── song1.mp3
 │   └── Link/
 │       └── song1.mp3
-├── The Legend of Zelda: Breath of the Wild/
+├── The Legend of Zelda - Breath of the Wild/
 │   └── Link (Archer)/
 │       └── song1.mp3
 └── ...
