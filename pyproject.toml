@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=70"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "amiibo-music-player"
+version = "0.1.0"
+authors = [
+    { name = "Pascal Béger" }
+]
+description = "Music player controlled by amiibo tags on Raspberry Pi"
+readme = "README.md"
+requires-python = ">=3.13"
+license = { text = "MIT" }
+dependencies = [
+    "amiibo-reader==0.1.2",
+]
+
+[project.urls]
+Homepage = "https://github.com/p-beger/amiibo-music-player"
+
+[dependency-groups]
+dev = [
+    "mypy",
+    "ruff",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+amiibo_music_player = ["py.typed"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.mypy]
+python_version = "3.13"
+check_untyped_defs = true
